@@ -19,7 +19,7 @@ int main(void) {
         int x = a / 2 * 2 * cosf(a) + W / 2;
         int y = a / 2 * sinf(a) + H / 2;
         
-        if(x >= 0 && x <= W && y >= 0 && y <= H)
+        if(x >= 0 && x < W && y >= 0 && y < H)
             screen[y][x] = '#';
         
         a += 0.05f;
