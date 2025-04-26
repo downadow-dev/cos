@@ -16,7 +16,7 @@ int main(void) {
     
     time = clock();
     while(a < 23.0f) {
-        int x = a / 2 * 2 * cosf(a) + W / 2;
+        int x = a * cosf(a) + W / 2;
         int y = a / 2 * sinf(a) + H / 2;
         
         if(x >= 0 && x < W && y >= 0 && y < H)
